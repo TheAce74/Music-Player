@@ -120,6 +120,7 @@ h2 {
   inset: 0;
   background-color: var(--black);
   padding: 20px;
+  height: 100vh;
 }
 
 .maxPlayerImage {
