@@ -121,7 +121,6 @@ h2 {
   background-color: var(--black);
   padding: 20px;
   height: 100vh;
-  overflow-y: hidden;
 }
 
 .maxPlayerImage {
