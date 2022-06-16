@@ -25,4 +25,14 @@ Music Player Web App with just HTML, CSS and JavaScript 😤🤯
 ![Screenshot_20220616-095743](https://user-images.githubusercontent.com/101275024/174035096-62efe59a-34b8-480a-a60d-da115ad9188c.png)
 
 
+![Screenshot_20220616-170809](https://user-images.githubusercontent.com/101275024/174116759-27e7207b-2686-4036-8044-c8f0928e9861.png)
+
+
+![Screenshot_20220616-170818](https://user-images.githubusercontent.com/101275024/174116775-b2a98429-959a-4dca-9f80-dd98e80685d7.png)
+
+
+![Screenshot_20220616-170828](https://user-images.githubusercontent.com/101275024/174116847-4f70c7b0-9b31-451b-a25e-fae6738202ac.png)
+
+
+
 Rock out here - https://vibing-with-the-ace.netlify.app
