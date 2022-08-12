@@ -776,9 +776,6 @@ function downloadSong(value) {
   link.href = location;
 }
 
-// close modal by on the backdrop
-
-
 
 //ensure that popup is closed once link is clicked
 link.addEventListener("click", () => {
@@ -787,6 +784,7 @@ link.addEventListener("click", () => {
   popup.classList.remove("flex");
 });
 
+// Neon effect
 const accentColors = ["#B624C1", "#EF40FF", "#9457E4", "#0FF0FC", "#1562C1"];
 
 function changeColor() {
