@@ -1,200 +1,362 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="Author" content="The Ace">
-  <title>Music Player</title>
-  
-  <!-- Icons Source -->
-  <script src="https://kit.fontawesome.com/36e8bee060.js" crossorigin="anonymous"></script>
-  
-  <!-- Custom Styles -->
-  <link rel="stylesheet" href="style.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="Author" content="The Ace" />
+    <title>Music Player</title>
 
-<body>
-  <header>
-    <h1>Beats By Ace</h1>
-    <img src="images/Ace.jpg" alt="Ace Of Cards" />
-  </header>
-  
-  <h2 class="welcome">Welcome</h2>
-  
-  <!-- Image Slider -->
-  <div class="slider">
-    <img src="images/Centimeter.jpg" alt="Image Slider">
-  </div>
-  
-  <!-- Song List -->
-  <h2>Top OSTs</h2>
-  <div class="songsContainer flex">
-    
-    <div class="song flex">
-      <img src="images/Call-Your-Name.jpg" alt="Attack on Titan">
-      <p>Call Your Name</p>
-      <i class="fa-solid fa-circle-down"></i>
+    <!-- Icons Source -->
+    <script
+      src="https://kit.fontawesome.com/36e8bee060.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="preloader.css" />
+  </head>
+
+  <body>
+    <!-- CSS preloader -->
+    <div class="loader">
+       <div class="cssload-dots">
+      <div class="cssload-dot"></div>
+      <div class="cssload-dot"></div>
+      <div class="cssload-dot"></div>
+      <div class="cssload-dot"></div>
+      <div class="cssload-dot"></div>
     </div>
     
-    <div class="song flex">
-      <img src="images/Centimeter.jpg" alt="Rent a Girlfriend">
-      <p>Centimeter</p>
-      <i class="fa-solid fa-circle-down"></i>
-    </div>
-    
-    <div class="song flex">
-      <img src="images/Daddy-Daddy-Do.jpg" alt="Love is War">
-      <p>Daddy Daddy Do</p>
-      <i class="fa-solid fa-circle-down"></i>
-    </div>
-    
-    <div class="song flex">
-      <img src="images/Evil-Morty-Dubstep.jpg" alt="Rick and Morty">
-      <p>Evil Morty Dubstep</p>
-      <i class="fa-solid fa-circle-down"></i>
-    </div>
-    
-    <div class="song flex">
-      <img src="images/Giri-Giri.jpg" alt="Love is War">
-      <p>Giri Giri</p>
-      <i class="fa-solid fa-circle-down"></i>
-    </div>
-    
-    <div class="song flex">
-      <img src="images/Great-Escape.jpg" alt="Attack on Titan">
-      <p>Great Escape</p>
-      <i class="fa-solid fa-circle-down"></i>
-    </div>
-    
-    <div class="song flex">
-      <img src="images/Guren-No-Yumiya.jpg" alt="Attack on Titan">
-      <p>Guren No Yumiya</p>
-      <i class="fa-solid fa-circle-down"></i>
-    </div>
-    
-    <div class="song flex">
-      <img src="images/Hacking-To-The-Gate.jpg" alt="Steins; Gate">
-      <p>Hacking To The Gate</p>
-      <i class="fa-solid fa-circle-down"></i>
-    </div>
-    
-    <div class="song flex">
-      <img src="images/Jiyuu-No-Tsubasa.jpg" alt="Attack on Titan">
-      <p>Jiyuu No Tsubasa</p>
-      <i class="fa-solid fa-circle-down"></i>
-    </div>
-    
-    <div class="song flex">
-      <img src="images/Love-Dramatic.jpg" alt="Love is War">
-      <p>Love Dramatic</p>
-      <i class="fa-solid fa-circle-down"></i>
-    </div>
-    
-    <div class="song flex">
-      <img src="images/Mikasa.jpg" alt="Attack on Titan">
-      <p>Mikasa</p>
-      <i class="fa-solid fa-circle-down"></i>
-    </div>
-    
-    <div class="song flex">
-      <img src="images/Nightmare-Alumina.jpg" alt="Death Note">
-      <p>Nightmare - Alumina</p>
-      <i class="fa-solid fa-circle-down"></i>
-    </div>
-    
-    <div class="song flex">
-      <img src="images/Nightmare-The-World.jpg" alt="Death Note">
-      <p>Nightmare - The World</p>
-      <i class="fa-solid fa-circle-down"></i>
-    </div>
-    
-    <div class="song flex">
-      <img src="images/Queen-Of-Mean.jpg" alt="Descendants">
-      <p>Queen Of Mean</p>
-      <i class="fa-solid fa-circle-down"></i>
-    </div>
-    
-    <div class="song flex">
-      <img src="images/Reluctant-Heroes.jpg" alt="Attack on Titan">
-      <p>Reluctant Heroes</p>
-      <i class="fa-solid fa-circle-down"></i>
-    </div>
-    
-    <div class="song flex">
-      <img src="images/Shinzou-Wo-Sasageyo.jpg" alt="Attack on Titan">
-      <p>Shinzou Wo Sasageyo</p>
-      <i class="fa-solid fa-circle-down"></i>
-    </div>
-    
-    <div class="song flex">
-      <img src="images/The-Rumbling.jpg" alt="Attack on Titan">
-      <p>The Rumbling</p>
-      <i class="fa-solid fa-circle-down"></i>
-    </div>
-    
-    <div class="song flex">
-      <img src="images/TMNT-Opening-Sequence.jpg" alt="Teenage Mutant Ninja Turtles">
-      <p>TMNT Opening Sequence</p>
-      <i class="fa-solid fa-circle-down"></i>
-    </div>
-    
-    <div class="song flex">
-      <img src="images/Touch-Off.jpg" alt="The Promised Neverland">
-      <p>Touch Off</p>
-      <i class="fa-solid fa-circle-down"></i>
-    </div>
-    
-    <div class="song flex">
-      <img src="images/Vogel-Im-Kafig.jpg" alt="Attack on Titan">
-      <p>Vogel Im Kafig</p>
-      <i class="fa-solid fa-circle-down"></i>
-    </div>
-    
-  </div>
-  
-  <!-- Fullscreen Music Player -->
-  <div class="maxPlayer">
-    <i class="fa-solid fa-angle-down"></i>
-    <img src="images/Call-Your-Name.jpg" alt="Music Image" class="maxPlayerImage">
-    <h3 class="songTitle">Call Your Name</h3>
-    <p class="anime">Attack on Titan</p>
-    <audio class="audio" src="audio/Call-Your-Name.mp3"></audio>
-    
-    <div class="flex timerWrapper">
-      <span>00:00</span>
-      <input type="range" value="0" class="seek">
-      <span>00:00</span>
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <filter id="goo">
+          <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="12" ></feGaussianBlur>
+          <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0	0 1 0 0 0	0 0 1 0 0	0 0 0 18 -7" result="goo" ></feColorMatrix>
+          <!--<feBlend in2="goo" in="SourceGraphic" result="mix" ></feBlend>-->
+        </filter>
+      </defs>
+    </svg>
     </div>
    
-    <div class="flex controls">
-      <i class="fa-solid fa-repeat"></i>
-      <i class="fa-solid fa-backward-step"></i>
-      <i class="fa-solid fa-play play1"></i>
-      <i class="fa-solid fa-pause pause1"></i>
-      <i class="fa-solid fa-forward-step"></i>
-      <i class="fa-solid fa-shuffle"></i>
+    <!-- end of preloader -->
+
+    <!-- header section -->
+    <header>
+      <h1 class="font-sm">🎧 Beats By Ace.</h1>
+      <div class="ace-circle">
+        <img class="img-sm" src="images/Ace.png" alt="Ace Of Cards" />
+      </div>
+    </header>
+    <!-- Image Slider -->
+    <div class="slider slider-sm">
+      <div class="gradient"></div>
+      <img class="slider_img-sm" src="./assets/0.jpg" alt="Image Slider" />
+      <!-- welcome section -->
+      <h1 class="welcome font-sm">Welcome</h1>
     </div>
-  </div>
-  
-  <!-- Reduced Music Player -->
-  <div class="minPlayer flex">
-    <img src="images/Call-Your-Name.jpg" alt="Music Image" class="minPlayerImage">
-    <h3 class="minSongTitle">Call Your Name</h3>
-    <i class="fa-solid fa-play play2"></i>
-    <i class="fa-solid fa-pause pause2"></i>
+
+    <!-- Song List -->
+    <h2 class="top-osts">Top OST</h2>
+    <div class="songsContainer flex">
+      <div class="song flex">
+        <div class="song-cover_wrapper">
+          <img src="images/Call-Your-Name.jpg" alt="Attack on Titan" />
+        </div>
+        <p class="font-xx-sm">Call Your Name</p>
+        <span class="music-options">
+          <div class="icon-circle"><i class="fa-solid fa-download"></i></div>
+          <div id="Call Your Name" class="icon-circle play-button"><i class="fa-solid fa-play"></i></div>
+        </span>
+      </div>
+
+      <div class="song flex">
+        <div class="song-cover_wrapper">
+          <img src="images/Centimeter.jpg" alt="Rent a Girlfriend" />
+        </div>
+        <p class="font-xx-sm">Centimeter</p>
+        <span class="music-options">
+          <div class="icon-circle"><i class="fa-solid fa-download"></i></div>
+          <div id="Centimeter" class="icon-circle play-button"><i class="fa-solid fa-play"></i></div>
+        </span>
+      </div>
+
+      <div class="song flex">
+        <div class="song-cover_wrapper">
+          <img src="images/Daddy-Daddy-Do.jpg" alt="Love is War" />
+        </div>
+        <p class="font-xx-sm">Daddy Daddy Do</p>
+        <span class="music-options">
+          <div class="icon-circle"><i class="fa-solid fa-download"></i></div>
+          <div id="Daddy Daddy Do" class="icon-circle play-button"><i class="fa-solid fa-play"></i></div>
+        </span>
+      </div>
+
+      <div class="song flex">
+        <div class="song-cover_wrapper">
+          <img src="images/Evil-Morty-Dubstep.jpg" alt="Rick and Morty" />
+        </div>
+        <p class="font-xx-sm">Evil Morty Dubstep</p>
+        <span class="music-options">
+          <div class="icon-circle"><i class="fa-solid fa-download"></i></div>
+          <div id="Evil Morty Dubstep" class="icon-circle play-button"><i class="fa-solid fa-play"></i></div>
+        </span>
+      </div>
+
+      <div class="song flex">
+        <div class="song-cover_wrapper">
+          <img src="images/Giri-Giri.jpg" alt="Love is War" />
+        </div>
+
+        <p class="font-xx-sm">Giri Giri</p>
+        <span class="music-options">
+          <div class="icon-circle"><i class="fa-solid fa-download"></i></div>
+          <div id="Giri Giri" class="icon-circle play-button"><i class="fa-solid fa-play"></i></div>
+        </span>
+      </div>
+
+      <div class="song flex">
+        <div class="song-cover_wrapper">
+          <img src="images/Great-Escape.jpg" alt="Attack on Titan" />
+        </div>
+
+        <p class="font-xx-sm">Great Escape</p>
+        <span class="music-options">
+          <div class="icon-circle"><i class="fa-solid fa-download"></i></div>
+          <div id="Great Escape" class="icon-circle play-button"><i class="fa-solid fa-play"></i></div>
+        </span>
+      </div>
+
+      <div class="song flex">
+        <div class="song-cover_wrapper">
+          <img src="images/Guren-No-Yumiya.jpg" alt="Attack on Titan" />
+        </div>
+
+        <p class="font-xx-sm">Guren No Yumiya</p>
+        <span class="music-options">
+          <div class="icon-circle"><i class="fa-solid fa-download"></i></div>
+          <div id="Guren No Yumiya" class="icon-circle play-button"><i class="fa-solid fa-play"></i></div>
+        </span>
+      </div>
+
+      <div class="song flex">
+        <div class="song-cover_wrapper">
+          <img src="images/Hacking-To-The-Gate.jpg" alt="Steins; Gate" />
+        </div>
+
+        <p class="font-xx-sm">Hacking To The Gate</p>
+        <span class="music-options">
+          <div class="icon-circle"><i class="fa-solid fa-download"></i></div>
+          <div id="Hacking To The Gate" class="icon-circle play-button"><i class="fa-solid fa-play"></i></div>
+        </span>
+      </div>
+
+      <div class="song flex">
+        <div class="song-cover_wrapper">
+          <img src="images/Jiyuu-No-Tsubasa.jpg" alt="Attack on Titan" />
+        </div>
+
+        <p class="font-xx-sm">Jiyuu No Tsubasa</p>
+        <span class="music-options">
+          <div class="icon-circle"><i class="fa-solid fa-download"></i></div>
+          <div id="Jiyuu No Tsubasa" class="icon-circle play-button"><i class="fa-solid fa-play"></i></div>
+        </span>
+      </div>
+
+      <div class="song flex">
+        <div class="song-cover_wrapper">
+          <img src="images/Love-Dramatic.jpg" alt="Love is War" />
+        </div>
+
+        <p class="font-xx-sm">Love Dramatic</p>
+        <span class="music-options">
+          <div class="icon-circle"><i class="fa-solid fa-download"></i></div>
+          <div id="Love Dramatic" class="icon-circle play-button"><i class="fa-solid fa-play"></i></div>
+        </span>
+      </div>
+
+      <div class="song flex">
+        <div class="song-cover_wrapper">
+          <img src="images/Mikasa.jpg" alt="Attack on Titan" />
+        </div>
+
+        <p class="font-xx-sm">Mikasa</p>
+        <span class="music-options">
+          <div class="icon-circle"><i class="fa-solid fa-download"></i></div>
+          <div id="Mikasa" class="icon-circle play-button"><i class="fa-solid fa-play"></i></div>
+        </span>
+      </div>
+
+      <div class="song flex">
+        <div class="song-cover_wrapper">
+          <img src="images/Nightmare-Alumina.jpg" alt="Death Note" />
+        </div>
+
+        <p class="font-xx-sm">Nightmare - Alumina</p>
+        <span class="music-options">
+          <div class="icon-circle"><i class="fa-solid fa-download"></i></div>
+          <div id="Nightmare - Alumina" class="icon-circle play-button"><i class="fa-solid fa-play"></i></div>
+        </span>
+      </div>
+
+      <div class="song flex">
+        <div class="song-cover_wrapper">
+          <img src="images/Nightmare-The-World.jpg" alt="Death Note" />
+        </div>
+
+        <p class="font-xx-sm">Nightmare - The World</p>
+        <span class="music-options">
+          <div class="icon-circle"><i class="fa-solid fa-download"></i></div>
+          <div id="Nightmare - The World" class="icon-circle play-button"><i class="fa-solid fa-play"></i></div>
+        </span>
+      </div>
+
+      <div class="song flex">
+        <div class="song-cover_wrapper">
+          <img src="images/Queen-Of-Mean.jpg" alt="Descendants" />
+        </div>
+
+        <p class="font-xx-sm">Queen Of Mean</p>
+        <span class="music-options">
+          <div class="icon-circle"><i class="fa-solid fa-download"></i></div>
+          <div id="Queen Of Mean" class="icon-circle play-button"><i class="fa-solid fa-play"></i></div>
+        </span>
+      </div>
+
+      <div class="song flex">
+        <div class="song-cover_wrapper">
+          <img src="images/Reluctant-Heroes.jpg" alt="Attack on Titan" />
+        </div>
+
+        <p class="font-xx-sm">Reluctant Heroes</p>
+        <span class="music-options">
+          <div class="icon-circle"><i class="fa-solid fa-download"></i></div>
+          <div id="Reluctant Heroes" class="icon-circle play-button"><i class="fa-solid fa-play"></i></div>
+        </span>
+      </div>
+
+      <div class="song flex">
+        <div class="song-cover_wrapper">
+          <img src="images/Shinzou-Wo-Sasageyo.jpg" alt="Attack on Titan" />
+        </div>
+
+        <p class="font-xx-sm">Shinzou Wo Sasageyo</p>
+        <span class="music-options">
+          <div class="icon-circle"><i class="fa-solid fa-download"></i></div>
+          <div id="Shinzou Wo Sasageyo" class="icon-circle play-button"><i class="fa-solid fa-play"></i></div>
+        </span>
+      </div>
+
+      <div class="song flex">
+        <div class="song-cover_wrapper">
+          <img src="images/The-Rumbling.jpg" alt="Attack on Titan" />
+        </div>
+
+        <p class="font-xx-sm">The Rumbling</p>
+        <span class="music-options">
+          <div class="icon-circle"><i class="fa-solid fa-download"></i></div>
+          <div id="The Rumbling" class="icon-circle play-button"><i class="fa-solid fa-play"></i></div>
+        </span>
+      </div>
+
+      <div class="song flex">
+        <div class="song-cover_wrapper">
+          <img
+            src="images/TMNT-Opening-Sequence.jpg"
+            alt="Teenage Mutant Ninja Turtles"
+          />
+        </div>
+
+        <p class="font-xx-sm">TMNT Opening Sequence</p>
+        <span class="music-options">
+          <div class="icon-circle"><i class="fa-solid fa-download"></i></div>
+          <div id="TMNT Opening Sequence" class="icon-circle play-button"><i class="fa-solid fa-play"></i></div>
+        </span>
+      </div>
+
+      <div class="song flex">
+        <div class="song-cover_wrapper">
+          <img src="images/Touch-Off.jpg" alt="The Promised Neverland" />
+        </div>
+
+        <p class="font-xx-sm">Touch Off</p>
+        <span class="music-options">
+          <div class="icon-circle"><i class="fa-solid fa-download"></i></div>
+          <div id="Touch Off" class="icon-circle play-button"><i class="fa-solid fa-play"></i></div>
+        </span>
+      </div>
+
+      <div class="song flex">
+        <div class="song-cover_wrapper">
+          <img src="images/Vogel-Im-Kafig.jpg" alt="Attack on Titan" />
+        </div>
+
+        <p class="font-xx-sm">Vogel Im Kafig</p>
+        <span class="music-options">
+          <div class="icon-circle"><i class="fa-solid fa-download"></i></div>
+          <div id="Vogel Im Kafig" class="icon-circle play-button"><i class="fa-solid fa-play"></i></div>
+        </span>
+      </div>
+    </div>
+
+    <!-- Fullscreen Music Player -->
+    <div class="maxPlayer">
+      <div class="backdrop"></div>
+      <i class="fa-solid fa-angle-down"></i>
+      <div class="maxPlayerInfoWrapper">
+        <div class="maxPlayerContainer">
+          <img
+            src="images/Call-Your-Name.jpg"
+            alt="Music Image"
+            class="maxPlayerImage"
+          />
+        </div>
+        <h3 class="songTitle">Call Your Name</h3>
+        <p class="anime">Attack on Titan</p>
+      </div>
+      <div class="maxControlWrapper">
+        <audio class="audio" src="audio/Call-Your-Name.mp3"></audio>
+
+        <div class="flex timerWrapper">
+          <span>00:00</span>
+          <input type="range" value="0" class="seek" />
+          <span>00:00</span>
+        </div>
+
+        <div class="flex controls">
+          <i class="fa-solid fa-repeat"></i>
+          <i class="fa-solid fa-backward-step"></i>
+          <i class="fa-solid fa-play play1"></i>
+          <i class="fa-solid fa-pause pause1"></i>
+          <i class="fa-solid fa-forward-step"></i>
+          <i class="fa-solid fa-shuffle"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- Reduced Music Player -->
+    <div class="minPlayer flex">
+      <img
+        src="images/Call-Your-Name.jpg"
+        alt="Music Image"
+        class="minPlayerImage"
+      />
+      <h3 class="minSongTitle">Call Your Name</h3>
+      <i class="fa-solid fa-play play2"></i>
+      <i class="fa-solid fa-pause pause2"></i>
       <i class="fa-solid fa-close"></i>
-  </div>
-  
-  <!-- Popup for Download -->
-  <dialog>
-    <a href="" target="_blank">Download Song</a>
-  </dialog>
-  
-  <!-- Script -->
-  <script src="main.js" defer></script>
-  <noscript>
-    Your Browser doesn't allow JavaScript! Do something about it 😡
-  </noscript>
-</body>
+    </div>
+
+    <!-- Popup for Download -->
+    <dialog>
+      <a href="" target="_blank">Download Song</a>
+    </dialog>
+
+    <!-- Script -->
+    <script src="main.js" defer></script>
+    <noscript>
+      Your Browser doesn't allow JavaScript! Do something about it 😡
+    </noscript>
+  </body>
 </html>
