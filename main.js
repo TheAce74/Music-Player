@@ -420,7 +420,7 @@ var rep = 0;
 function repeat(e) {
   //if repeat button isn't active, play next song
   if (rep == 1) {
-    e.target.style.color = "var(--blue)";
+    e.target.style.color = "";
     return (rep = 0);
   }
   // else if active, repeat
@@ -448,7 +448,7 @@ var random = 0;
 function shuffle(e) {
   //if shuffle button isn't active, play next song in sequence
   if (random == 1) {
-    e.target.style.color = "var(--blue)";
+    e.target.style.color = "";
     return (random = 0);
   }
   // else if active, shuffle
