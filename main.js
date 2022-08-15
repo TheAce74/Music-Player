@@ -497,6 +497,8 @@ media.addEventListener("ended", () => {
     animeTitle.textContent = songs[o].anime;
     //provisions for minplayer
     minTitle.textContent = songs[o].title;
+    //changes maxPlayer background image to song image
+    maxPlayer.style.backgroundImage = `url('./images/${songs[o].thumbnail}')`;
   }
 });
 
