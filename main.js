@@ -305,6 +305,8 @@ function nextImage() {
         //provisions for minplayer
         minPlayerImage.src = maxPlayerImage.src;
         minTitle.textContent = songs[k + 1].title;
+        //changes maxPlayer background image to song image
+        maxPlayer.style.backgroundImage = `url('./images/${songs[k + 1].thumbnail}')`;
       }
       //if the match is the last image in the array, display the first image; change titles accordingly
       else {
@@ -317,6 +319,8 @@ function nextImage() {
         //provisions for minplayer
         minPlayerImage.src = maxPlayerImage.src;
         minTitle.textContent = songs[0].title;
+        //changes maxPlayer background image to song image
+        maxPlayer.style.backgroundImage = `url('./images/${songs[0].thumbnail}')`;
       }
     }
     //if it doesn't match skip
@@ -392,6 +396,8 @@ function previousImage() {
         //provisions for minplayer
         minPlayerImage.src = maxPlayerImage.src;
         minTitle.textContent = songs[m - 1].title;
+        //changes maxPlayer background image to song image
+        maxPlayer.style.backgroundImage = `url('./images/${songs[m - 1].thumbnail}')`;
       }
       //if the match is the first image in the array, display the last image; change titles accordingly
       else {
@@ -404,6 +410,8 @@ function previousImage() {
         //provisions for minplayer
         minPlayerImage.src = maxPlayerImage.src;
         minTitle.textContent = songs[songs.length - 1].title;
+        //changes maxPlayer background image to song image
+        maxPlayer.style.backgroundImage = `url('./images/${songs[songs.length - 1].thumbnail}')`;
       }
     }
     //if it doesn't match skip
